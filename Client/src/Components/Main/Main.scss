@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.row {
+  display: flex;
+  align-items: center;
+  .summer-container {
+    
+    @media (max-width: (762px)) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  h5 {
+    color: var(--light-text-color, #fff);
+    font-family: "Playfair Display";
+    font-size: 17px;
+    font-weight: 700;
+  }
+  h1 {
+    color: var(--light-text-color, #fff);
+    font-family: "Playfair Display";
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0.2px;
+    width: 500px;
+    @media (max-width: (762px)) {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+  h4 {
+    color: var(--light-text-color, #fff);
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    width: 300px;
+  }
+  img {
+    width: 360px;
+    height: 360px;
+    @media (max-width:762px) {
+      margin-bottom: 90px;
+      width: 260px;
+    height: 260px;
+    position: relative;
+    }
+  }
+  button {
+    color: var(--light-text-color, #fff);
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    padding: 15px 36px;
+    border-radius: 37px;
+    border: 1px solid var(--light-text-color, #fff);
+    background-color: #2053ac;
+    margin-top: 20px;
+  }
+}

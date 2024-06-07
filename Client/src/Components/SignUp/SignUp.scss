@@ -1,0 +1,101 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  .signUp-header {
+    margin-bottom: 24px;
+    h2 {
+      color: var(--text-color, #252b42);
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 40px;
+      font-weight: 700;
+    }
+    h5 {
+      color: var(--second-text-color, #a3a2a2);
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 700;
+      width: 300px;
+      line-height: 21px;
+    }
+  }
+  .signUp-main {
+    margin-top: 10px;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 10px 130px;
+      border-radius: 5px;
+      background: var(--primary-color, #23856d);
+      text-decoration: none;
+      color: var(--light-text-color, #fff);
+      font-family: "Montserrat";
+      font-size: 12px;
+      font-weight: 700;
+    }
+    img {
+      margin-right: 10px;
+    }
+    .separator {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-left: 28px;
+    }
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      p{
+        color: red;
+        margin-block:4px
+      }
+      label {
+        color: var(--text-color, #252b42);
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 900;
+      }
+      input {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        background: #f9f9f9;
+        outline: none;
+        width: 100%;
+        padding: 10px 0 10px 21px;
+      }
+      input.error{
+        border: 1px solid red;
+      }
+      .getStarted-btn {
+        background: var(--success-color, #2dc071);
+        color: var(--light-text-color, #fff);
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 900;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: none;
+        padding: 8px;
+      }
+    }
+  }
+  .login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h3 {
+      color: var(--text-color, #252b42);
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 900;
+    }
+    li{
+      list-style-type: none;
+    }
+  }
+}

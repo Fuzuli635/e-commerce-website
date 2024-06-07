@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.right{
+margin-top: 30px;
+  .image{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+.left123 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+margin-top: 30px;
+
+  p {
+    color: var(--text-color, #252b42);
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: 700;
+  }
+  h5 {
+    color: var(--text-color, #252b42);
+    font-family: "Playfair Display";
+    font-weight: 700;
+  }
+  h1 {
+    color: var(--text-color, #252b42);
+    font-family: "Playfair Display";
+    font-size: 80px;
+    font-weight: 500;
+  }
+  h4 {
+    color: var(--second-text-color, #737373);
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+section {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+    gap: 10px;
+    box-shadow: 0 0 10px #afb8c6;
+    input {
+      padding: 5px 10px;
+      border: none;
+    }
+    textarea {
+      border: none;
+    }
+  }
+  .btn {
+    background-color: rgb(58, 85, 236);
+    color: #fff;
+    margin-top: 15px;
+  }
+}

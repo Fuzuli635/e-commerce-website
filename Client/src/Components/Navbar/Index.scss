@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.navbar-Section {
+  background-color: #2053ac;
+  color: #fff;
+  width: 100%;
+  &.typeA {
+    background-color: #fff;
+    color: #2053ac;
+    .logOut {
+      color: #e02121;
+    }
+    .heading {
+      font-family: "Playfair Display";
+      font-size: 20px;
+      font-weight: 700;
+      &.typeA {
+        .lovely {
+          color: #a6a2a2;
+        }
+      }
+    }
+    .navbar {
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 21px;
+        a {
+          color: #9695a2;
+        }
+      }
+    }
+    .nav-login-cart {
+      &.typeA {
+        #login {
+          a {
+            color: #929191;
+          }
+        }
+        #member {
+          a {
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    &.typeA {
+      color: #fff;
+    }
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 762px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .heading {
+      font-family: "Playfair Display";
+      font-size: 20px;
+      font-weight: 700;
+      .lovely {
+        color: #fff;
+      }
+      @media (max-width: 762px) {
+        margin-left: -300px;
+      }
+    }
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 21px;
+      a {
+        color: #fff;
+      }
+
+      @media (max-width: 762px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      li {
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 700;
+        padding: 1rem;
+
+        &:hover a {
+          color: #72fb09;
+          transition: 0.3s;
+        }
+        &.active a {
+          color: #72fb09;
+        }
+      }
+    }
+    .nav-login-cart {
+      display: flex;
+      align-items: center;
+      gap: 45px;
+      list-style-type: none;
+
+      @media (max-width: 762px) {
+        position: relative;
+        top: -320px;
+        right: -130px;
+      }
+      #login {
+        font-weight: 700;
+        a {
+          color: #ffffff;
+        }
+        @media (max-width: 762px) {
+          display: none;
+        }
+      }
+      .favoriteIcon {
+        color: red;
+        cursor: pointer;
+      }
+      .cartIcon {
+        position: relative;
+        @media (max-width:762px) {
+          margin-left: 30px;
+        }
+        span {
+          font-size: 12px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #2879fe;
+          color: #fff;
+          position: absolute;
+          right: -7px;
+          top: -8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .cartIcon1 {
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+        }
+      }
+      .favoriteIcon {
+        img {
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+        }
+      }
+      a {
+        color: #2fdf18;
+      }
+
+      #member {
+        border-radius: 5px;
+        background-color: #23856d;
+        padding: 15px 25px;
+        border: none;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 700;
+        a {
+          color: #fff;
+        }
+        @media (max-width: 762px) {
+          display: none;
+        }
+        .icon-arrow {
+          width: 12px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  .logOut {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    @media (max-width:762px) {
+      margin-right: 160px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+section {
+  .notfound-header {
+    h2 {
+      color: var(--text-color, #252b42);
+      font-family: "Playfair Display";
+      font-size: 60px;
+      font-weight: 500;
+    }
+    .home-404-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      a {
+        color: var(--text-color, #252b42);
+        font-family: "Playfair Display";
+        font-size: 14px;
+        font-weight: 400;
+      }
+      h6 {
+        color: var(--second-text-color, #737373);
+        font-family: "Playfair Display";
+        font-size: 14px;
+        font-weight: 700;
+      }
+      img {
+        width: 11px;
+        height: 18px;
+      }
+    }
+  }
+}
+main {
+  background: var(--light-gray-1, #fafafa);
+  width: 100%;
+  .oops-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: 300px;
+      height: 300px;
+      margin-top: 40px;
+    }
+  }
+  .oops {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    h2 {
+      color: var(--text-color, #252b42);
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 40px;
+      font-weight: 700;
+    }
+    p {
+      color: var(--second-text-color, #a8a7a7);
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .btn {
+      button {
+        padding: 8px 35px;
+        border-radius: 5px;
+        background: var(--success-color, #2dc071);
+        color: var(--light-text-color, #fff);
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+      }
+    }
+    .lookingfor-section {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      h2 {
+        color: var(--text-color, #252b42);
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 65px;
+      li{
+        list-style-type: none;
+      }
+      .div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+          width: 15px;
+          height: 15px;
+        }
+      }
+      a {
+        color: var(--text-color, #252b42);
+        font-family: "Montserrat";
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}
