@@ -18,6 +18,7 @@ const CustomLink = ({ id, to, pageName }) => {
 };
 
 const Index = ({ type }) => {
+  console.log(import.meta.env.VITE_APP_MODE);
   const navigate = useNavigate();
   const { jwt } = userData();
   const logOut = () => {
