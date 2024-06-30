@@ -11,13 +11,17 @@ import fabrands5 from "../../assets/Icons/Images/fa-brands-5.png";
 import fabrands6 from "../../assets/Icons/Images/fa-brands-6.png";
 import axios from "axios";
 const Index = () => {
+  // const api =
+  //   import.meta.env.VITE_APP_MODE === "local"
+  //     ? "http://localhost:5173/Product"
+  //     : "http://localhost:1337/api";
   const navigate = useNavigate();
   const [categories, setCategories] = useState([]);
   const [subCategories, setSubCategories] = useState([]);
   const [catId, setCatId] = useState(1);
   useEffect(() => {
     const getCategories = async () => {
-      const { data } = await axios.get(
+      const { data } = await axios.get(api
         `${import.meta.env.VITE_UPLOAD_IMG}/api/Categories`
       );
       setCategories(data.data);
@@ -202,14 +206,15 @@ const Index = () => {
                   key={id}
                   onClick={() => navigate("/singleproduct/" + id)}
                 >
-                  <h6 className="card-title">{attributes?.Title}</h6>
-                  <p className="type">{attributes?.Type}</p>
                   <img
                     src={`${
                       import.meta.env.VITE_UPLOAD_IMG +
                       attributes.Images.data[0].attributes.url
                     }`}
                   />
+                  <h6 className="card-title">{attributes?.Title}</h6>
+                  <p className="type">{attributes?.Type}</p>
+
                   <p className="price">${attributes?.price}</p>
                   <div className="eclipse">
                     <span className="span1"></span>
@@ -221,7 +226,7 @@ const Index = () => {
               );
             })}
           </div>
-          
+
           <div className="pagination">
             <div className="buttons">
               <button
